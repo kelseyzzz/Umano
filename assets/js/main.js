@@ -1,1 +1,9 @@
-console.log("Hello World from main.js!");
+
+$(document).ready(function() {
+//$(".custom").parallax();
+//$(".crafting").parallax();
+//$(".mission").parallax();
+//$("body").parallax();
+
+
+});

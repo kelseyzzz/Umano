@@ -16,6 +16,9 @@ TABLE OF CONTENTS:
 
 /* 1. Main Layout ================================= */
 
+@font-face { font-family: Leafy; src: url('../img/leafy.otf'); }
+@font-face { font-family: AvantGar-book; src: url('../img/AvantGarGotItcTOT-Boo.otf'); } 
+
 * {
 	box-sizing: border-box;
 }
@@ -77,7 +80,7 @@ nav {
 			a{
 				text-decoration: none;
 				color: #4a5666;
-				font-family: helvetica, arial, sans-serif;
+				font-family: Leafy;
 			}
 		}
 	}
@@ -87,11 +90,51 @@ nav {
 	background-image: url("../img/custom-background.png");
 	width: 860px;
 	height: 520px;
+	position: relative;
 
 		h2{
 			color: #4a5666;
+			font-size: 55px;
 			text-transform: uppercase;
+			font-family: Leafy;
+			position: absolute;
+			top: 70px;
+			left: 150px;
+		}
 
+		.work {
+			img{
+				position: absolute;
+				top: 129px;
+				left: 125px;
+
+			}
+		}
+
+		.art {
+			img{
+				position: absolute;
+				top: 215px;
+				left: 118px;
+			}
+		}
+
+		.get-started {
+			background-image: url("../img/get-started.png");
+			width: 204px;
+			height: 57px;
+			position: relative;
+			top: 375px;
+			left: 100px;
+
+			h3{
+				font-family: AvantGar-book;
+				position: absolute;
+				top: 22px;
+				left: 24px;
+				font-weight: 100;
+				font-size: 2em;
+			}
 		}
 }
 
