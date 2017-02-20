@@ -16,28 +16,61 @@ TABLE OF CONTENTS:
   box-sizing: border-box; }
 
 body {
-  background: #ccc; }
+  background-color: #f8fcff;
+  background-image: url("../img/background-pattern.png");
+  height: 3000px; }
 
 .content {
-  background: white;
   padding: 30px;
   font-family: sans-serif;
-  width: 90%;
-  max-width: 600px;
   margin: 30px auto;
   border-radius: 10px; }
 
 /* 2. Content ================================= */
-.logo {
-  width: 60px; }
+header {
+  width: 860px;
+  margin: 30px auto;
+  padding: 30px; }
 
-h1 {
-  font-weight: 700;
-  font-size: 22pt;
-  margin: 15px 0; }
+.logo h1 a {
+  text-decoration: none;
+  background: url(../img/logo-copy.svg);
+  text-indent: -999999px;
+  overflow: hidden;
+  width: 216px;
+  height: 40px; }
 
-p {
-  color: #777;
-  line-height: 140%; }
+.title {
+  height: 67px;
+  width: 590px;
+  margin: 30px auto; }
+
+nav {
+  text-align: center; }
+  nav ul li {
+    display: inline-block;
+    text-transform: uppercase; }
+    nav ul li a {
+      text-decoration: none;
+      color: #4a5666;
+      font-family: helvetica, arial, sans-serif; }
+
+.custom {
+  background-image: url("../img/custom-background.png");
+  width: 860px;
+  height: 520px; }
+  .custom h2 {
+    color: #4a5666;
+    text-transform: uppercase; }
+
+.crafting {
+  background-image: url("../img/product-info-background.png");
+  width: 860px;
+  height: 520px; }
+
+.mission {
+  background-image: url("../img/mission-background.png");
+  width: 860px;
+  height: 1442px; }
 
 /*# sourceMappingURL=main.css.map */
