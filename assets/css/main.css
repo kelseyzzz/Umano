@@ -26,6 +26,7 @@ TABLE OF CONTENTS:
 body {
   background-color: #f8fcff;
   background-image: url("../img/background-pattern.png");
+  background-attachment: fixed;
   height: 3000px; }
 
 .content {
@@ -40,13 +41,14 @@ header {
   margin: 30px auto;
   padding: 30px; }
 
-.logo h1 a {
-  text-decoration: none;
-  background: url(../img/logo-copy.svg);
-  text-indent: -999999px;
-  overflow: hidden;
-  width: 216px;
-  height: 40px; }
+.logo h1 {
+  margin: 0 auto;
+  background: url(../img/logo1.svg) no-repeat;
+  width: 85px;
+  height: 20px; }
+  .logo h1 a {
+    color: transparent;
+    text-align: center; }
 
 .title {
   height: 67px;
@@ -54,14 +56,19 @@ header {
   margin: 30px auto; }
 
 nav {
-  text-align: center; }
+  text-align: center;
+  margin-top: 50px; }
   nav ul li {
     display: inline-block;
     text-transform: uppercase; }
+    nav ul li .home a {
+      margin-left: 0; }
     nav ul li a {
       text-decoration: none;
       color: #4a5666;
-      font-family: Leafy; }
+      font-family: Leafy;
+      font-size: 32px;
+      margin-left: 30px; }
 
 .custom {
   background-image: url("../img/custom-background.png");
