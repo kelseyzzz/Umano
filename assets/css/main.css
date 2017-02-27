@@ -127,18 +127,30 @@ nav {
     color: #ea403c;
     text-transform: uppercase;
     font-family: Leafy;
-    font-size: 25px; }
+    font-size: 27px;
+    padding-bottom: 5px; }
   .crafting p {
     color: #4a5666;
-    font-family: AvantGar-book; }
+    font-family: AvantGar-book;
+    font-size: 17px; }
   .crafting .t-shirt img {
     position: absolute;
     top: 29%;
     left: 300px; }
+  .crafting .freak {
+    position: absolute;
+    left: 100px;
+    top: 30%;
+    text-align: right; }
   .crafting .artwork {
     position: absolute;
     left: 600px;
-    top: 60%; }
+    top: 57%; }
+  .crafting .screenprinted {
+    text-align: right;
+    position: absolute;
+    left: 100px;
+    top: 67%; }
 
 .mission {
   background-image: url("../img/mission-background.png");
@@ -168,7 +180,7 @@ nav {
       display: inline-block;
       padding-left: 75px; }
     .mission .step-1 img {
-      padding-right: 100px;
+      padding-right: 129px;
       float: right; }
   .mission .step-2 {
     height: 300px; }

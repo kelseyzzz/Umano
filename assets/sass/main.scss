@@ -173,13 +173,15 @@ nav {
 			color: #ea403c;
 			text-transform: uppercase;
 			font-family: Leafy;
-			font-size: 25px;
+			font-size: 27px;
+			padding-bottom: 5px;
 
 		}
 
 		p {
 			color: #4a5666;
 			font-family: AvantGar-book;
+			font-size: 17px;
 			
 
 		}
@@ -191,13 +193,25 @@ nav {
 		}
 
 		.freak {
+			position: absolute;
+			left: 100px;
+			top: 30%;
+			text-align: right;
 
 		}
 
 		.artwork {
 			position: absolute;
 			left: 600px;
-			top: 60%;
+			top: 57%;
+		}
+
+		.screenprinted{
+			text-align: right;
+			position: absolute;
+			left: 100px;
+			top: 67%;
+
 		}
 }
 
@@ -250,7 +264,7 @@ nav {
 		}
 
 		img{
-			padding-right: 100px;
+			padding-right: 129px;
 			float: right;
 		}
 	}
