@@ -185,7 +185,7 @@ nav {
   .mission .step-2 {
     height: 300px; }
     .mission .step-2 img {
-      padding-left: 100px; }
+      padding-left: 129px; }
     .mission .step-2 .words {
       padding-top: 70px;
       display: inline-block;
@@ -195,7 +195,7 @@ nav {
   .mission .step-3 {
     height: 250px; }
     .mission .step-3 img {
-      padding-right: 100px;
+      padding-right: 129px;
       float: right; }
     .mission .step-3 .worddd {
       display: inline-block;
@@ -203,7 +203,7 @@ nav {
   .mission .step-4 {
     height: 250px; }
     .mission .step-4 img {
-      padding-left: 100px; }
+      padding-left: 120px; }
     .mission .step-4 .wordddd {
       display: inline-block;
       float: right;
@@ -211,7 +211,7 @@ nav {
       padding-right: 75px; }
   .mission .step-5 img {
     float: right;
-    padding-right: 100px; }
+    padding-right: 75px; }
   .mission .step-5 .worddddd {
     display: inline-block;
     padding-left: 75px; }
