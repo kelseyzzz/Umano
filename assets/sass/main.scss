@@ -150,11 +150,161 @@ nav {
 	background-image: url("../img/product-info-background.png");
 	width: 860px;
 	height: 520px;
+	position: relative;
+
+		h1 {
+			color: #4a5666;
+			text-transform: uppercase;
+			font-family: Leafy;
+			font-size: 37px;
+			position: absolute;
+			left: 452px;
+			top: 50px;
+		}
+
+		.perfect img{
+			position: absolute;
+			left: 520px;
+			top: 64px;
+
+		}
+
+		h2 {
+			color: #ea403c;
+			text-transform: uppercase;
+			font-family: Leafy;
+			font-size: 25px;
+
+		}
+
+		p {
+			color: #4a5666;
+			font-family: AvantGar-book;
+			line-height: 20px;
+
+		}
+
+		.t-shirt img {
+			position: absolute;
+			top: 29%;
+			left: 300px;
+		}
+
+		.freak {
+
+		}
 }
 
 .mission{
 	background-image: url("../img/mission-background.png");
 	width: 860px;
 	height: 1442px;
+	position: relative;
+
+	.our-mission{
+		text-align: center;
+		height: 150px;
+
+	}
+
+	h1 {
+		color: #ede2b1;
+		text-transform: uppercase;
+		font-family: Leafy;
+		font-size: 40px;
+
+	}
+
+	p {
+		color: #ffffff;
+		font-family: AvantGar-book;
+
+
+	}
+
+	
+
+	.step-1 {
+		height: 300px;
+
+		.word {
+			padding-top: 15px;
+			display: inline-block;
+			padding-left: 50px;
+
+		}
+
+		img{
+			padding-right: 94px;
+			float: right;
+		}
+	}
+
+	.step-2 {
+
+		height: 300px;
+
+		img {
+			padding-left: 94px;
+
+		}
+
+		.words{
+			display: inline-block;
+			text-align: right;
+			float: right;
+			padding-right: 50px;
+
+		}
+	}
+
+	.step-3 {
+		height: 200px;
+
+		img{
+			padding-right: 94px;
+			float: right;
+		}
+
+		.worddd{
+			display: inline-block;
+			padding-left: 50px;
+
+			
+		}
+	}
+
+	.step-4 {
+		height: 200px;
+
+		img{
+			padding-left: 94px;
+
+		}
+
+		.wordddd{
+			display: inline-block;
+			float: right;
+			text-align: right;
+			padding-right: 50px;
+		}
+	}
+
+	.step-5 {
+
+		img{
+			float: right;
+			padding-right: 94px;
+		}
+
+		.worddddd{
+			display: inline-block;
+			padding-left: 50px;
+
+		}
+	}
+	
+
+	
 }
 
