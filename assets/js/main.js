@@ -11,6 +11,10 @@ $(document).ready(function() {
 		// scalarX: 0
 	});
 
+	$("#scene-three").parallax({
+		// scalarX: 0
+	});
+
 
 
 });
