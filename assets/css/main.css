@@ -80,6 +80,20 @@ svg#Layer_1 {
   width: 300px;
   height: 100%; }
 
+svg#Layer_2 {
+  width: 389px;
+  height: 100%;
+  display: inline-block;
+  float: right; }
+
+svg#Layer_4 {
+  width: 250px;
+  height: 100%; }
+
+svg#Layer_3 {
+  width: 250px;
+  height: 100%; }
+
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
@@ -88,6 +102,27 @@ svg#Layer_1 {
   animation-delay: 2s; }
 
 @keyframes dash {
+  to {
+    stroke-dashoffset: 0; } }
+
+.st0 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dasher 3s linear forwards;
+  animation-iteration-count: infinite;
+  animation-delay: 3s; }
+
+@keyframes dasher {
+  to {
+    stroke-dashoffset: 0; } }
+
+.step4shirt {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  animation: dashy 3s linear forwards;
+  animation-iteration-count: infinite; }
+
+@keyframes dashy {
   to {
     stroke-dashoffset: 0; } }
 
