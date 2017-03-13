@@ -38,6 +38,20 @@ body {
 	border-radius: 10px;
 }
 
+$break-small: 420px;
+$break-large: 1024px;
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
 
 
 /* 2. Content ================================= */
@@ -46,16 +60,19 @@ header{
 	width: 860px;
 	margin: 30px auto;
 	padding: 30px;
+	@include respond-to(handhelds) { width: 100% ;}
 	
 }
 
 .logo {
+
 
 	h1{
 		margin: 0 auto;
 		background: url(../img/logo1.svg) no-repeat;
 		width: 85px;
 		height: 20px;
+
 
 		a{
 			color: transparent;
@@ -69,6 +86,8 @@ header{
 	height: 67px;
 	width: 590px;
 	margin: 30px auto;
+	@include respond-to(handhelds) { width: 100% ;}
+
 }
 
 nav {
@@ -94,11 +113,36 @@ nav {
 	}
 }
 
+svg#Layer_1 {
+	width: 300px;
+	height: 100%;
+
+}
+
+
+.path {
+  		stroke-dasharray: 1000;
+  		stroke-dashoffset: 1000;
+  		animation: dash 5s linear forwards;
+  		animation-iteration-count: infinite;
+  		animation-delay: 2s;
+
+	}
+
+@keyframes dash {
+		to {
+			stroke-dashoffset: 0;
+			
+
+		}
+	}
+
 .custom{
 	background-image: url("../img/custom-background.png");
 	width: 860px;
 	height: 520px;
 	position: relative;
+	@include respond-to(handhelds) { width: 100% ;}
 
 		h2{
 			color: #4a5666;
@@ -108,6 +152,7 @@ nav {
 			position: absolute;
 			top: 70px;
 			left: 150px;
+			@include respond-to(handhelds) { width: 100% ;}
 		}
 
 		.work {
@@ -115,6 +160,7 @@ nav {
 				position: absolute;
 				top: 129px;
 				left: 125px;
+				@include respond-to(handhelds) { width: 100% ;}
 
 			}
 		}
@@ -124,6 +170,7 @@ nav {
 				position: absolute;
 				top: 215px;
 				left: 118px;
+				@include respond-to(handhelds) { width: 100% ;}
 			}
 		}
 
@@ -134,6 +181,7 @@ nav {
 			position: relative;
 			top: 375px;
 			left: 100px;
+			@include respond-to(handhelds) { width: 100% ;}
 
 			h3{
 				font-family: AvantGar-book;
@@ -142,6 +190,7 @@ nav {
 				left: 24px;
 				font-weight: 100;
 				font-size: 2em;
+				@include respond-to(handhelds) { width: 100% ;}
 			}
 		}
 }
@@ -334,7 +383,106 @@ nav {
 		}
 	}
 	
-
 	
 }
+
+
+
+
+.meet-katie {
+	background-image: url("../img/meet-katie-bg.png");
+	width: 860px;
+	height: 834px;
+	position: relative;
+
+		.katie {
+			position: absolute;
+			left: -7px;
+			top: -4px;
+		}
+
+		.meet-title {
+			top: 10%;
+			left: 10%;
+			position: absolute;
+			z-index: 5;
+
+		}
+
+		.katie-p {
+			padding-top: 20%;
+			padding-right: 40%;
+		}
+
+		 .katie-title p {
+			display: block;
+			z-index: 1;
+			position: relative;
+			text-align: center;
+			color: #4a5666;
+			font-family: AvantGar-book;
+			font-size: 25px;
+		}
+
+		.we-met img {
+			position: absolute;
+			top: 61%;
+			left: 11%;
+
+		}
+
+		.we-met h1 {
+				position: absolute;
+				top: 55%;
+				left: 23%;
+				color: #f78551;
+				font-family: Leafy;
+				font-size: 96px;
+				z-index: 1;
+		}
+
+		.we-met p {
+			position: absolute;
+		    width: 27%;
+		    font-family: AvantGar-book;
+		    color: #4a5666;
+		    top: 65%;
+		    left: 63%;
+		    line-height: 25px;
+		    font-size: 18px;
+
+		}
+
+}
+
+footer {
+		font-family: AvantGar-book;
+		color: #ffffff;
+
+
+	img {
+		width: 100%;
+		height: 326px;
+		margin: 30px auto;
+		margin-bottom: 0;
+	
+	}
+
+	h4 {
+		position: relative;
+    	top: 99%;
+    	font-size: 20px;
+    	left: 10%;
+    }
+
+    h5 {
+		position: relative;
+    	top: 93%;
+    	font-size: 20px;
+    	left: 78%;
+    }
+
+}
+
+
 

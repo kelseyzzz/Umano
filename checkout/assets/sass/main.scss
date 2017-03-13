@@ -1,0 +1,309 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+
+
+/* 1. Main Layout ================================= */
+
+@font-face { font-family: Leafy; src: url('../img/leafy.otf'); }
+@font-face { font-family: AvantGar-book; src: url('../img/AvantGarGotItcTOT-Boo.otf'); } 
+
+@mixin step {
+	font-family: AvantGar-book;
+	font-size: 32px;
+}
+
+@mixin choose {
+	font-family: Leafy;
+	font-size: 32px;
+	text-transform: uppercase;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f8fcff;
+	background-image: url("../img/background-pattern.png");
+	background-attachment: fixed;
+	height: 3000px;
+}
+
+.content {
+	padding: 30px;
+	font-family: sans-serif;
+	margin: 30px auto;
+	border-radius: 10px;
+}
+
+
+
+/* 2. Content ================================= */
+
+header{
+	width: 860px;
+	margin: 30px auto;
+	padding: 30px;
+	
+}
+
+.logo {
+
+	h1{
+		margin: 0 auto;
+		background: url(../img/logo1.svg) no-repeat;
+		width: 85px;
+		height: 20px;
+
+		a{
+			color: transparent;
+			text-align: center;
+		}
+
+	}
+}
+
+.title{
+	height: 67px;
+	width: 590px;
+	margin: 30px auto;
+}
+
+nav {
+	text-align: center;
+	margin-top: 50px;
+	ul{
+		li{
+			display: inline-block;
+			text-transform: uppercase;
+
+			.home a{
+				margin-left: 0;
+			}
+			
+			a{
+				text-decoration: none;
+				color: #4a5666;
+				font-family: Leafy;
+				font-size: 32px;
+				margin-left: 30px;
+			}
+		}
+	}
+}
+
+
+.custom{
+	background-image: url("../img/step-1-background.png");
+	width: 860px;
+	height: 892px;
+	position: relative;	
+	
+}
+
+.top-row-shirts {
+		
+
+		div {
+			display: inline-block;
+		}
+
+		
+}
+
+.tee {
+	text-align: center;
+	padding: 33px;
+
+
+	p {
+		color: white;
+		font-family: AvantGar-book;
+	}
+}
+
+.bottom-row-shirts {
+
+		div {
+			display: inline-block;
+		}
+		
+}
+
+.tep {
+		@include step;
+		color: white;
+	}
+.top-step {
+	display: inline-block;
+	width: 100%;
+
+	img {
+		display: inline-block;
+	}
+}
+
+.choose-shirt {
+	@include choose;
+	color: #feeb99;
+	display: inline-block;
+}
+
+.choose-color {
+	@include choose;
+	color: #feeb99;
+}
+
+.step-color {
+	@include step;
+	color: white;
+
+}
+
+.color-cloud {
+
+}
+
+.black-cloud {
+	width: 39%;
+    padding-left: 24%;
+}
+
+.grey-cloud {
+	width: 20%;
+    padding-left: 3%;
+
+}
+
+.white-cloud {
+	width: 21%;
+	padding-left: 3%;
+}
+
+.art-board {
+	width: 459px;
+	background-color: white;
+	height: 600px;
+	overflow: scroll;
+	display: inline-block;
+	border-radius: 34px;
+
+
+	img {
+		width: 150px;
+
+	}
+}
+
+.shirt-ex {
+	float: right;
+	margin: 30px auto;
+}
+
+.crafting{
+	background-image: url("../img/step-2-background.png");
+	width: 860px;
+	height: 853px;
+	position: relative;
+
+}
+
+.confirm {
+	background-image: url("../img/step-3-background.png");
+	width: 860px;
+	height: 660px;
+	position: relative;
+
+	.shirt-left-end {
+		display: inline-block;
+	}
+
+	
+
+	.end-words {
+		float: right;
+		
+	}
+
+	.done {
+			color: #ea403c;
+			font-family: leafy;
+			font-size: 41px;
+		}
+
+}
+
+.add-button {
+	border: none;
+	background: none;
+
+
+	h3 {
+		color: white;
+		position: absolute;
+		font-family: AvantGar-book;
+	}
+
+	img {
+		position: relative;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+		font-family: AvantGar-book;
+		color: #ffffff;
+		height: 326px;
+
+
+	img {
+		width: 100%;
+		margin: 30px auto;
+		margin-bottom: 0;
+	
+	}
+
+	h4 {
+		position: relative;
+    	top: 99%;
+    	font-size: 20px;
+    	left: 10%;
+    }
+
+    h5 {
+		position: relative;
+    	top: 93%;
+    	font-size: 20px;
+    	left: 78%;
+    }
+
+}
+
+
