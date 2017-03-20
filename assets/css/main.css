@@ -40,9 +40,12 @@ header {
   width: 860px;
   margin: 30px auto;
   padding: 30px; }
-  @media only screen and (max-width: 420px) {
+  @media (max-width: 768px) {
     header {
-      width: 100%; } }
+      width: 460px; } }
+  @media (max-width: 450px) {
+    header {
+      width: 360px; } }
 
 .logo h1 {
   margin: 0 auto;
@@ -57,9 +60,18 @@ header {
   height: 67px;
   width: 590px;
   margin: 30px auto; }
-  @media only screen and (max-width: 420px) {
+  @media (max-width: 768px) {
     .title {
-      width: 100%; } }
+      width: 390px;
+      height: auto; } }
+  @media (max-width: 450px) {
+    .title {
+      width: 290px;
+      height: auto;
+      text-align: center; } }
+  .title img {
+    max-width: 100%;
+    max-height: 100%; }
 
 nav {
   text-align: center;
@@ -75,24 +87,6 @@ nav {
       font-family: Leafy;
       font-size: 32px;
       margin-left: 30px; }
-
-svg#Layer_1 {
-  width: 300px;
-  height: 100%; }
-
-svg#Layer_2 {
-  width: 389px;
-  height: 100%;
-  display: inline-block;
-  float: right; }
-
-svg#Layer_4 {
-  width: 250px;
-  height: 100%; }
-
-svg#Layer_3 {
-  width: 250px;
-  height: 100%; }
 
 .path {
   stroke-dasharray: 1000;
@@ -131,9 +125,14 @@ svg#Layer_3 {
   width: 860px;
   height: 520px;
   position: relative; }
-  @media only screen and (max-width: 420px) {
+  @media (max-width: 768px) {
     .custom {
-      width: 100%; } }
+      width: 660px;
+      height: 420px; } }
+  @media (max-width: 450px) {
+    .custom {
+      width: 360px;
+      height: 520px; } }
   .custom h2 {
     color: #4a5666;
     font-size: 55px;
@@ -142,23 +141,38 @@ svg#Layer_3 {
     position: absolute;
     top: 70px;
     left: 150px; }
-    @media only screen and (max-width: 420px) {
+    @media (max-width: 768px) {
       .custom h2 {
-        width: 100%; } }
+        font-size: 35px;
+        top: 27px; } }
+    @media (max-width: 450px) {
+      .custom h2 {
+        left: 111px;
+        top: 55px; } }
   .custom .work img {
     position: absolute;
     top: 129px;
     left: 125px; }
-    @media only screen and (max-width: 420px) {
+    @media (max-width: 768px) {
       .custom .work img {
-        width: 100%; } }
+        top: 71px;
+        left: 87px; } }
+    @media (max-width: 450px) {
+      .custom .work img {
+        top: 122px;
+        left: 57px; } }
   .custom .art img {
     position: absolute;
     top: 215px;
     left: 118px; }
-    @media only screen and (max-width: 420px) {
+    @media (max-width: 768px) {
       .custom .art img {
-        width: 100%; } }
+        top: 158px;
+        left: 82px; } }
+    @media (max-width: 450px) {
+      .custom .art img {
+        left: 48px;
+        top: 204px; } }
   .custom .get-started {
     background-image: url("../img/get-started.png");
     width: 204px;
@@ -166,9 +180,14 @@ svg#Layer_3 {
     position: relative;
     top: 375px;
     left: 100px; }
-    @media only screen and (max-width: 420px) {
+    @media (max-width: 768px) {
       .custom .get-started {
-        width: 100%; } }
+        top: 308px;
+        left: 76px; } }
+    @media (max-width: 450px) {
+      .custom .get-started {
+        left: 55px;
+        top: 383px; } }
     .custom .get-started h3 {
       font-family: AvantGar-book;
       position: absolute;
@@ -176,15 +195,18 @@ svg#Layer_3 {
       left: 24px;
       font-weight: 100;
       font-size: 2em; }
-      @media only screen and (max-width: 420px) {
-        .custom .get-started h3 {
-          width: 100%; } }
 
 .crafting {
   background-image: url("../img/product-info-background.png");
   width: 860px;
   height: 520px;
   position: relative; }
+  @media (max-width: 768px) {
+    .crafting {
+      width: 660px; } }
+  @media (max-width: 450px) {
+    .crafting {
+      width: 360px; } }
   .crafting h1 {
     color: #4a5666;
     text-transform: uppercase;
@@ -193,44 +215,98 @@ svg#Layer_3 {
     position: absolute;
     left: 452px;
     top: 50px; }
+    @media (max-width: 768px) {
+      .crafting h1 {
+        left: 193px;
+        top: 40px; } }
+    @media (max-width: 450px) {
+      .crafting h1 {
+        left: 65px;
+        top: 40px;
+        font-size: 27px; } }
   .crafting .perfect img {
     position: absolute;
     left: 520px;
     top: 64px; }
+    @media (max-width: 768px) {
+      .crafting .perfect img {
+        left: 359px;
+        top: 40px; } }
+    @media (max-width: 450px) {
+      .crafting .perfect img {
+        left: 94px;
+        top: 40px; } }
   .crafting h2 {
     color: #ea403c;
     text-transform: uppercase;
     font-family: Leafy;
     font-size: 27px;
     padding-bottom: 5px; }
+    @media (max-width: 450px) {
+      .crafting h2 {
+        font-size: 20px; } }
   .crafting p {
     color: #4a5666;
     font-family: AvantGar-book;
     font-size: 17px; }
+    @media (max-width: 450px) {
+      .crafting p {
+        font-size: 15px; } }
   .crafting .t-shirt img {
     position: absolute;
     top: 29%;
     left: 300px; }
+    @media (max-width: 768px) {
+      .crafting .t-shirt img {
+        left: 239px; } }
+    @media (max-width: 450px) {
+      .crafting .t-shirt img {
+        left: 105px; } }
   .crafting .freak {
     position: absolute;
     left: 100px;
     top: 30%;
     text-align: right; }
+    @media (max-width: 768px) {
+      .crafting .freak {
+        left: 48px; } }
+    @media (max-width: 450px) {
+      .crafting .freak {
+        left: 10px; } }
   .crafting .artwork {
     position: absolute;
     left: 600px;
     top: 57%; }
+    @media (max-width: 768px) {
+      .crafting .artwork {
+        left: 474px; } }
+    @media (max-width: 450px) {
+      .crafting .artwork {
+        left: 20px; } }
   .crafting .screenprinted {
     text-align: right;
     position: absolute;
     left: 100px;
     top: 67%; }
+    @media (max-width: 768px) {
+      .crafting .screenprinted {
+        left: 60px; } }
+    @media (max-width: 450px) {
+      .crafting .screenprinted {
+        left: 18px;
+        top: 80%; } }
 
 .mission {
   background-image: url("../img/mission-background.png");
   width: 860px;
   height: 1442px;
   position: relative; }
+  @media (max-width: 768px) {
+    .mission {
+      width: 660px; } }
+  @media (max-width: 450px) {
+    .mission {
+      width: 360px; } }
   .mission .our-mission {
     text-align: center;
     height: 150px;
@@ -244,69 +320,192 @@ svg#Layer_3 {
     padding-bottom: 15px; }
   .mission p {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 21px;
     font-family: AvantGar-book;
     line-height: 26px; }
+    @media (max-width: 450px) {
+      .mission p {
+        font-size: 17px;
+        line-height: 18px; } }
   .mission .step-1 {
     height: 200px; }
     .mission .step-1 .word {
       padding-top: 15px;
+      width: 395px;
       display: inline-block;
       padding-left: 75px; }
-    .mission .step-1 img {
-      padding-right: 129px;
-      float: right; }
+      @media (max-width: 768px) {
+        .mission .step-1 .word {
+          text-align: left;
+          padding-left: 20px; } }
+      @media (max-width: 450px) {
+        .mission .step-1 .word {
+          width: 280px;
+          font-size: 10px;
+          padding-top: 0; } }
+    .mission .step-1 svg#Layer_1 {
+      width: 300px;
+      height: auto;
+      float: right;
+      margin-right: 75px;
+      display: inline-block; }
+      @media (max-width: 768px) {
+        .mission .step-1 svg#Layer_1 {
+          width: 200px;
+          margin-right: 0; } }
+      @media (max-width: 450px) {
+        .mission .step-1 svg#Layer_1 {
+          margin-right: 47px; } }
   .mission .step-2 {
-    height: 300px; }
-    .mission .step-2 img {
-      padding-left: 129px; }
+    height: 200px; }
+    .mission .step-2 svg#Layer_5 {
+      width: 300px;
+      height: auto;
+      float: left;
+      margin-left: 63px;
+      display: inline-block; }
+      @media (max-width: 768px) {
+        .mission .step-2 svg#Layer_5 {
+          margin-left: -31px; } }
+      @media (max-width: 450px) {
+        .mission .step-2 svg#Layer_5 {
+          position: absolute;
+          padding-top: 185px;
+          padding-left: 53px;
+          margin-left: -20px; } }
     .mission .step-2 .words {
       padding-top: 70px;
       display: inline-block;
       text-align: right;
       float: right;
       padding-right: 75px; }
+      @media (max-width: 768px) {
+        .mission .step-2 .words {
+          padding-right: 0; } }
+      @media (max-width: 450px) {
+        .mission .step-2 .words {
+          padding-top: 0; } }
   .mission .step-3 {
-    height: 250px; }
-    .mission .step-3 img {
-      padding-right: 129px;
-      float: right; }
+    height: 300px;
+    display: inline-block; }
     .mission .step-3 .worddd {
+      padding-top: 35px;
+      padding-left: 75px;
+      display: inline-block; }
+      @media (max-width: 768px) {
+        .mission .step-3 .worddd {
+          padding-left: 0; } }
+      @media (max-width: 450px) {
+        .mission .step-3 .worddd {
+          padding-top: 179px; } }
+    .mission .step-3 svg#Layer_3 {
+      width: 250px;
+      height: auto;
+      float: right;
       display: inline-block;
-      padding-left: 75px; }
+      margin-left: 36px;
+      margin-top: 62px; }
+      @media (max-width: 768px) {
+        .mission .step-3 svg#Layer_3 {
+          margin-left: 0;
+          margin-top: 0; } }
+      @media (max-width: 450px) {
+        .mission .step-3 svg#Layer_3 {
+          padding-left: 54px;
+          margin-right: 72px; } }
   .mission .step-4 {
     height: 250px; }
-    .mission .step-4 img {
-      padding-left: 120px; }
+    .mission .step-4 svg#Layer_4 {
+      width: 250px;
+      height: auto;
+      margin-left: 93px; }
+      @media (max-width: 768px) {
+        .mission .step-4 svg#Layer_4 {
+          margin-left: 0; } }
+      @media (max-width: 450px) {
+        .mission .step-4 svg#Layer_4 {
+          position: absolute;
+          padding-top: 231px;
+          padding-left: 79px;
+          margin-left: -15px; } }
     .mission .step-4 .wordddd {
       display: inline-block;
       float: right;
       text-align: right;
       padding-right: 75px; }
-  .mission .step-5 img {
-    float: right;
-    padding-right: 75px; }
+      @media (max-width: 768px) {
+        .mission .step-4 .wordddd {
+          padding-right: 0; } }
+      @media (max-width: 450px) {
+        .mission .step-4 .wordddd {
+          padding-top: 135px; } }
   .mission .step-5 .worddddd {
     display: inline-block;
     padding-left: 75px; }
+    @media (max-width: 768px) {
+      .mission .step-5 .worddddd {
+        padding-left: 0; } }
+    @media (max-width: 450px) {
+      .mission .step-5 .worddddd {
+        padding-top: 102px; } }
+  .mission .step-5 svg#Layer_2 {
+    width: 563px;
+    height: auto;
+    display: inline-block;
+    float: right;
+    margin-right: -200px;
+    margin-top: -189px; }
+    @media (max-width: 768px) {
+      .mission .step-5 svg#Layer_2 {
+        margin-right: -247px;
+        margin-top: -288px; } }
+    @media (max-width: 450px) {
+      .mission .step-5 svg#Layer_2 {
+        margin-top: -96px;
+        padding-right: 231px;
+        margin-right: -278px; } }
 
 .meet-katie {
   background-image: url("../img/meet-katie-bg.png");
   width: 860px;
   height: 834px;
   position: relative; }
+  @media (max-width: 768px) {
+    .meet-katie {
+      width: 660px; } }
+  @media (max-width: 450px) {
+    .meet-katie {
+      width: 360px;
+      height: 500px; } }
   .meet-katie .katie {
     position: absolute;
     left: -7px;
     top: -4px; }
+    @media (max-width: 768px) {
+      .meet-katie .katie {
+        width: 673px;
+        left: -5px; } }
+    @media (max-width: 450px) {
+      .meet-katie .katie {
+        width: 362px;
+        left: 1px; } }
   .meet-katie .meet-title {
     top: 10%;
     left: 10%;
     position: absolute;
     z-index: 5; }
+    @media (max-width: 450px) {
+      .meet-katie .meet-title {
+        width: 178px;
+        top: 2%;
+        left: 5%; } }
   .meet-katie .katie-p {
     padding-top: 20%;
     padding-right: 40%; }
+    @media (max-width: 450px) {
+      .meet-katie .katie-p {
+        margin-left: -8%;
+        padding-top: 11%; } }
   .meet-katie .katie-title p {
     display: block;
     z-index: 1;
@@ -315,10 +514,23 @@ svg#Layer_3 {
     color: #4a5666;
     font-family: AvantGar-book;
     font-size: 25px; }
+    @media (max-width: 450px) {
+      .meet-katie .katie-title p {
+        font-size: 13px;
+        width: 199px; } }
   .meet-katie .we-met img {
     position: absolute;
     top: 61%;
     left: 11%; }
+    @media (max-width: 768px) {
+      .meet-katie .we-met img {
+        top: 54%;
+        left: 21%; } }
+    @media (max-width: 450px) {
+      .meet-katie .we-met img {
+        font-size: 13px;
+        width: 200px;
+        top: 44%; } }
   .meet-katie .we-met h1 {
     position: absolute;
     top: 55%;
@@ -327,6 +539,13 @@ svg#Layer_3 {
     font-family: Leafy;
     font-size: 96px;
     z-index: 1; }
+    @media (max-width: 768px) {
+      .meet-katie .we-met h1 {
+        top: 48%; } }
+    @media (max-width: 450px) {
+      .meet-katie .we-met h1 {
+        top: 40%;
+        font-size: 46px; } }
   .meet-katie .we-met p {
     position: absolute;
     width: 27%;
@@ -336,13 +555,24 @@ svg#Layer_3 {
     left: 63%;
     line-height: 25px;
     font-size: 18px; }
+    @media (max-width: 768px) {
+      .meet-katie .we-met p {
+        top: 85%;
+        left: 23%;
+        width: 400px; } }
+    @media (max-width: 450px) {
+      .meet-katie .we-met p {
+        left: 31px;
+        top: 70%;
+        width: 300px;
+        font-size: 15px; } }
 
 footer {
   font-family: AvantGar-book;
   color: #ffffff; }
   footer img {
     width: 100%;
-    height: 326px;
+    height: auto;
     margin: 30px auto;
     margin-bottom: 0; }
   footer h4 {
